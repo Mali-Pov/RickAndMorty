@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+  border-right: 1px solid black;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+  flex: 1;
+}
+
+.value {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+  flex: 1;
+}
+
+.MuiContainer-root .MuiBox-root > .MuiBox-root:last-child .value,
+.MuiContainer-root .MuiBox-root > .MuiBox-root:last-child .title {
+  border-bottom: none !important;
+}
+
+text {
+  font-size: 0.7em;
+  fill: grey;
+}
+@media only screen and (max-width: 600px) {
+  text {
+    font-size: 0.3em;
+  }
+  .title,
+  .value {
+    font-size: 0.5rem;
+    padding: 0.3rem;
+  }
+  .App {
+    overflow: hidden;
+  }
+}

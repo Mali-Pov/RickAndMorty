@@ -1,0 +1,27 @@
+.NavBar {
+  justify-content: space-between;
+  background-color: #3f8088;
+}
+.NavBar img {
+  padding-block: .5rem;
+}
+.link {
+  color: var(--grey-500);
+  margin-inline: .5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.link.active{
+    background-color: #01b4c6;
+}
+
+@media only screen and (max-width: 600px) {
+  .link {
+    font-size: 0.6em;;
+  }
+  .NavBar .mui-image-wrapper   {
+    width: 1rem !important;
+  }
+}

@@ -1,0 +1,24 @@
+.header {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  background-image: repeating-radial-gradient(
+    circle closest-corner at 50rem 50rem,
+    #01b4c6,
+    #3f8088 10%,
+    #01b4c6 20%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: small;
+    margin-top: 0.5rem;
+  }
+  svg {
+    background-size: contain;
+  }
+}
